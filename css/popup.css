@@ -1,0 +1,22 @@
+.content-popup{
+  min-width: 600px;
+}
+.content-popup > ul {
+  margin: 0;
+  padding: 0;
+}
+.content-popup > ul > li{
+  list-style: none;
+  margin: 10px;
+}
+.content-popup > ul > li > span {
+  display: inline-block;
+}
+.local-key {
+  width: 300px;
+}
+.local-value {
+  width: 280px;
+  text-align: center;
+  word-break: break-all;
+}

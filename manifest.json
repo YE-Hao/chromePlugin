@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "简单的Chrome扩展demo",
+  "permissions": [
+    "storage",
+    "declarativeContent",
+    "contextMenus"
+  ],
+  "icons":
+  {
+    "16": "img/chrome.png",
+    "48": "img/chrome.png",
+    "128": "img/chrome.png"
+  },
+   "browser_action": 
+  {
+    "default_icon": "img/chrome.png",
+    "default_title": "这是一个示例Chrome插件",
+    "default_popup": "pages/popup.html"
+  },
+  "background":
+  {
+    "scripts": ["js/background.js"]
+  },
+  "content_scripts":
+  [
+    {
+      "js": ["js/content-script.js"],
+      "matches": ["<all_urls>"],
+      "run_at": "document_start"
+    }
+  ]
+}
